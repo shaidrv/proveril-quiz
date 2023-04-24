@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Onest';
+  font-style: normal;
+  box-sizing: border-box;
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; */
+}
+
+.container {
+  width: 1216px;
+  background-color: #caffa0;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 400px;
+}
+
+.info__title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #383838;
+  padding: 32px 0 16px 32px;
+  margin: 0;
+}
+
+.info__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
+  opacity: 0.7;
+  padding: 0 0 81px 32px;
+  margin: 0;
+}
+
+.info__logo {
+  padding: 0 0 38.38px 42px;
+  width: 356px;
+  height: 212.62px;
+}
+
+.form {
+  width: 576px;
+  margin: 32px 32px 32px 0;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 0;
+  position: relative;
+}
+
+.form__header {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 32px 24px 32px;
+}
+
+.form__title {
+  font-weight: 500;
+  color: #383838;
+  font-size: 16px;
+  margin: 0;
+}
+
+.form__counter {
+  color: #9b9b9b;
+  font-weight: 400;
+}
+
+.form__body {
+  width: 512px;
+  margin: 0 32px 56px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__radio {
+  width: 252px;
+  border-radius: 16px;
+  width: 252px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 18px 18px 18px 16px;
+  box-sizing: border-box;
+  margin: 0 0 8px 0;
+  /* display: flex;
+  justify-content: space-between;
+  box-sizing: border-box; */
+}
+
+.form__radio label {
+  color: #383838;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__next-button {
+  width: 108px;
+  height: 44px;
+  background: #383838;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  background-image: url('./img/Arrow.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 66px 15px;
+  padding: 12px 40px 12px 20px;
+  margin: 0 40px 32px 0;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.real-radio {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  display: block;
+}
+
+.real-radio:checked ~ .custom-radio::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 6px solid #383838;
+  background-color: #ffffff;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <h1 class="info__title">Подберём вуз мечты</h1>
+        <p class="info__description">
+          Ответьте на 8 простых вопросов, и мы составим список наболее
+          подходящих для вас вузов
+        </p>
+        <div class="info__logo">
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+      </div>
+      <div class="form">
+        <div class="form__header">
+          <h1 class="form__title">Для кого вы ищете учебное заведение?</h1>
+          <div class="form__counter">Шаг 1/9</div>
+        </div>
+        <div class="form__body">
+          <div>
+            <div class="form__radio">
+              <label for="yourself">
+                <input
+                  class="real-radio"
+                  id="yourself"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Себе </span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+            <div class="form__radio">
+              <label for="relative">
+                <input
+                  class="real-radio"
+                  id="relative"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Родственнику</span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+            <div class="form__radio">
+              <label for="child">
+                <input
+                  class="real-radio"
+                  id="child"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Ребенку </span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <div class="form__radio">
+              <label for="spouse">
+                <input
+                  class="real-radio"
+                  id="spouse"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Супругу/супруге</span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+            <div class="form__radio">
+              <label for="colleague">
+                <input
+                  class="real-radio"
+                  id="colleague"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Коллеге </span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+            <div class="form__radio">
+              <label for="other">
+                <input
+                  class="real-radio"
+                  id="other"
+                  type="radio"
+                  name="for-whom"
+                />
+                <span class="text-radio">Другое </span>
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__buttons">
+          <div></div>
+          <div>
+            <button class="form__next-button">Далее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
