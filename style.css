@@ -93,13 +93,20 @@ body {
 .form__radio {
   width: 252px;
   border-radius: 16px;
-  width: 252px;
   border: 1px solid #f5f5f5;
   background-color: #f5f5f5;
   border-radius: 16px;
   padding: 18px 18px 18px 16px;
   box-sizing: border-box;
   margin: 0 0 8px 0;
+}
+
+.form__radio_short {
+  width: 252px;
+}
+
+.form__radio_long {
+  width: 100%;
 }
 
 .form__radio label {
@@ -227,4 +234,8 @@ label {
 
 select:focus {
   outline: none;
+}
+
+.long-radio {
+  width: 512px;
 }
