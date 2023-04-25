@@ -20,7 +20,9 @@
       <div class="form">
         <div class="form__header">
           <h1 class="form__title">Для кого вы ищете учебное заведение?</h1>
-          <div class="form__counter">Шаг 1/9</div>
+          <div class="form__counter">
+            Шаг 1/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div>
@@ -31,6 +33,7 @@
                   id="yourself"
                   type="radio"
                   name="for-whom"
+                  value="yourself"
                 />
                 <span class="text-radio">Себе </span>
                 <span class="custom-radio"></span>
@@ -43,6 +46,7 @@
                   id="relative"
                   type="radio"
                   name="for-whom"
+                  value="relative"
                 />
                 <span class="text-radio">Родственнику</span>
                 <span class="custom-radio"></span>
@@ -55,6 +59,7 @@
                   id="child"
                   type="radio"
                   name="for-whom"
+                  value="child"
                 />
                 <span class="text-radio">Ребенку </span>
                 <span class="custom-radio"></span>
@@ -69,6 +74,7 @@
                   id="spouse"
                   type="radio"
                   name="for-whom"
+                  value="spouse"
                 />
                 <span class="text-radio">Супругу/супруге</span>
                 <span class="custom-radio"></span>
@@ -81,6 +87,7 @@
                   id="colleague"
                   type="radio"
                   name="for-whom"
+                  value="colleague"
                 />
                 <span class="text-radio">Коллеге </span>
                 <span class="custom-radio"></span>
@@ -93,6 +100,7 @@
                   id="other"
                   type="radio"
                   name="for-whom"
+                  value="other"
                 />
                 <span class="text-radio">Другое </span>
                 <span class="custom-radio"></span>
@@ -103,14 +111,18 @@
         <div class="form__buttons">
           <div></div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">В каком городе планируете поступать?</h1>
-          <div class="form__counter">Шаг 2/9</div>
+          <div class="form__counter">
+            Шаг 2/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body">
           <div class="select">
@@ -118,6 +130,7 @@
               <div class="select__content">
                 <div class="select__name">Город</div>
                 <select name="city" class="select__body">
+                  <option value="">Выберите город</option>
                   <option value="saint-petersburg">Санкт-Петербург</option>
                   <option value="moscow">Москва</option>
                   <option value="nizhny-novgorod">Нижний Новгород</option>
@@ -128,16 +141,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Какое образование уже есть?</h1>
-          <div class="form__counter">Шаг 3/9</div>
+          <div class="form__counter">
+            Шаг 3/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div>
@@ -148,6 +165,7 @@
                   id="9class"
                   type="radio"
                   name="education"
+                  value="9class"
                 />
                 <span class="text-radio">9 классов </span>
                 <span class="custom-radio"> </span>
@@ -160,6 +178,7 @@
                   id="11class"
                   type="radio"
                   name="education"
+                  value="11class"
                 />
                 <span class="text-radio">11 классов</span>
                 <span class="custom-radio"></span>
@@ -172,6 +191,7 @@
                   id="school"
                   type="radio"
                   name="education"
+                  value="school"
                 />
                 <span class="text-radio">Училище</span>
                 <span class="custom-radio"></span>
@@ -186,6 +206,7 @@
                   id="college"
                   type="radio"
                   name="education"
+                  value="college"
                 />
                 <span class="text-radio">Колледж/техникум</span>
                 <span class="custom-radio"></span>
@@ -198,6 +219,7 @@
                   id="11"
                   type="radio"
                   name="education"
+                  value="11"
                 />
                 <span class="text-radio">11 классов </span>
                 <span class="custom-radio"></span>
@@ -210,6 +232,7 @@
                   id="higher-incomplete"
                   type="radio"
                   name="education"
+                  value="higher-incomplete"
                 />
                 <span class="text-radio">Неоконченное высшее </span>
                 <span class="custom-radio"></span>
@@ -218,16 +241,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Куда планируете поступать?</h1>
-          <div class="form__counter">Шаг 4/9</div>
+          <div class="form__counter">
+            Шаг 4/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div class="long-field">
@@ -238,6 +265,7 @@
                   id="to-university"
                   type="radio"
                   name="admission"
+                  value="to-university"
                 />
                 <span class="text-radio">Вуз </span>
                 <span class="custom-radio"> </span>
@@ -250,6 +278,7 @@
                   id="to-college"
                   type="radio"
                   name="admission"
+                  value="to-college"
                 />
                 <span class="text-radio">Колледж/техникум</span>
                 <span class="custom-radio"></span>
@@ -262,6 +291,7 @@
                   id="to-school"
                   type="radio"
                   name="admission"
+                  value="to-school"
                 />
                 <span class="text-radio">Училище</span>
                 <span class="custom-radio"></span>
@@ -270,16 +300,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Какую форму обучения предпочитаете?</h1>
-          <div class="form__counter">Шаг 5/9</div>
+          <div class="form__counter">
+            Шаг 5/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div class="long-field">
@@ -290,6 +324,7 @@
                   id="fulltime"
                   type="radio"
                   name="education-form"
+                  value="fulltime"
                 />
                 <span class="text-radio">Очную </span>
                 <span class="custom-radio"> </span>
@@ -302,6 +337,7 @@
                   id="parttime"
                   type="radio"
                   name="education-form"
+                  value="parttime"
                 />
                 <span class="text-radio">Заочную</span>
                 <span class="custom-radio"></span>
@@ -314,6 +350,7 @@
                   id="remote"
                   type="radio"
                   name="education-form"
+                  value="remote"
                 />
                 <span class="text-radio">Дистанционную</span>
                 <span class="custom-radio"></span>
@@ -322,16 +359,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Рассматриваете платное обучение?</h1>
-          <div class="form__counter">Шаг 6/9</div>
+          <div class="form__counter">
+            Шаг 6/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div class="long-field">
@@ -342,6 +383,7 @@
                   id="budget"
                   type="radio"
                   name="payment"
+                  value="budget"
                 />
                 <span class="text-radio">Нет, только бюджет </span>
                 <span class="custom-radio"> </span>
@@ -354,6 +396,7 @@
                   id="paid"
                   type="radio"
                   name="payment"
+                  value="paid"
                 />
                 <span class="text-radio">Да, планирую учиться платно</span>
                 <span class="custom-radio"></span>
@@ -366,6 +409,7 @@
                   id="both"
                   type="radio"
                   name="payment"
+                  value="both"
                 />
                 <span class="text-radio">Возможны оба варианта</span>
                 <span class="custom-radio"></span>
@@ -374,16 +418,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Какая специальность интересует?</h1>
-          <div class="form__counter">Шаг 7/9</div>
+          <div class="form__counter">
+            Шаг 7/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body">
           <div class="select">
@@ -391,6 +439,7 @@
               <div class="select__content">
                 <div class="select__name">Специальность</div>
                 <select name="speciality" class="select__body">
+                  <option value="">Выберите специальность</option>
                   <option value="any">Любая</option>
                   <option value="economy">Экономика</option>
                   <option value="philosophy">Философия</option>
@@ -402,16 +451,20 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">Как скоро планируете поступать?</h1>
-          <div class="form__counter">Шаг 8/9</div>
+          <div class="form__counter">
+            Шаг 8/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_radio">
           <div>
@@ -429,6 +482,7 @@
                   id="quarter"
                   type="radio"
                   name="date"
+                  value="quarter"
                 />
                 <span class="text-radio">Квартал</span>
                 <span class="custom-radio"></span>
@@ -457,6 +511,7 @@
                   id="half-year"
                   type="radio"
                   name="date"
+                  value="half-year"
                 />
                 <span class="text-radio">Полгода </span>
                 <span class="custom-radio"></span>
@@ -465,18 +520,22 @@
           </div>
         </div>
         <div class="form__buttons">
-          <div class="form__button form__button_last">Назад</div>
+          <div class="form__button form__button_back">Назад</div>
           <div>
-            <button class="form__button form__button_next">Далее</button>
+            <button class="form__button form__button_next" disabled>
+              Далее
+            </button>
           </div>
         </div>
       </div>
-      <div class="form">
+      <div class="form hidden">
         <div class="form__header">
           <h1 class="form__title">
             Ваша подборка готова! 🥳 Куда нам отправить её?
           </h1>
-          <div class="form__counter">Шаг 9/9</div>
+          <div class="form__counter">
+            Шаг 9/<span class="forms__count"></span>
+          </div>
         </div>
         <div class="form__body form__body_input">
           <div class="long-field">
@@ -485,6 +544,7 @@
                 type="text"
                 class="form__input"
                 placeholder="Как вас зовут?"
+                name="name"
               />
             </div>
             <div class="form__row form__row_long">
@@ -492,10 +552,16 @@
                 type="tel"
                 class="form__input"
                 placeholder="Номер телефона"
+                name="phone"
               />
             </div>
             <div class="form__row form__row_long">
-              <input type="email" class="form__input" placeholder="E-mail" />
+              <input
+                type="email"
+                class="form__input"
+                placeholder="E-mail"
+                name="email"
+              />
             </div>
           </div>
         </div>
