@@ -22,7 +22,7 @@
           <h1 class="form__title">Для кого вы ищете учебное заведение?</h1>
           <div class="form__counter">Шаг 1/9</div>
         </div>
-        <div class="form__body">
+        <div class="form__body form__body_radio">
           <div>
             <div class="form__radio">
               <label for="yourself">
@@ -103,7 +103,34 @@
         <div class="form__buttons">
           <div></div>
           <div>
-            <button class="form__next-button">Далее</button>
+            <button class="form__button form__button_next">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form__header">
+          <h1 class="form__title">В каком городе планируете поступать?</h1>
+          <div class="form__counter">Шаг 2/9</div>
+        </div>
+        <div class="form__body">
+          <div class="select">
+            <div class="select__container">
+              <div class="select__content">
+                <div class="select__name">Город</div>
+                <select name="city" class="select__body">
+                  <option value="saint-petersburg">Санкт-Петербург</option>
+                  <option value="moscow">Москва</option>
+                  <option value="nizhny-novgorod">Нижний Новгород</option>
+                  <option value="novosibirsk">Новосибирск</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__buttons">
+          <div class="form__button form__button_last">Назад</div>
+          <div>
+            <button class="form__button form__button_next">Далее</button>
           </div>
         </div>
       </div>
